@@ -1,6 +1,6 @@
-name: "Mobile Feature Suggestion"
+name: "Feature Suggestion"
 description: "Suggest a new feature to improve our mobile application."
-title: "[Mobile Feature]: "
+title: "[feature]: "
 labels: ["enhancement", "mobile"]
 assignees: []
 body:
