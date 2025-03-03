@@ -1,86 +1,74 @@
 name: "Bug Report"
-description: "Report a bug related to the Rocket.Chat React Native app."
-title: "[bug]: "
-labels: ["bug"]
+description: "Report a bug to help us improve."
+title: ""
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for reporting a bug. Please fill out the information below to help us address the issue promptly.
-  - type: input
-    id: server_version
-    attributes:
-      label: "Rocket.Chat Server Version"
-      description: "Specify the version of the Rocket.Chat server you're connected to."
-      placeholder: "e.g., 7.0.0"
-    validations:
-      required: true
-  - type: input
-    id: app_version
-    attributes:
-      label: "Rocket.Chat App Version"
-      description: "Specify the version of the Rocket.Chat app where the bug occurred."
-      placeholder: "e.g., 4.30.0"
-    validations:
-      required: true
-  - type: input
-    id: device_name
-    attributes:
-      label: "Device Name"
-      description: "Provide the name and model of your device."
-      placeholder: "e.g., iPhone 12, Samsung Galaxy S21"
-    validations:
-      required: true
-  - type: input
-    id: os_version
-    attributes:
-      label: "OS Version"
-      description: "Specify the operating system version of your device."
-      placeholder: "e.g., iOS 15.1, Android 11"
-    validations:
-      required: true
+        ## Thank you for taking the time to report this bug!  
+        Before submitting, please check if a similar issue exists.  
+
   - type: textarea
-    id: bug_description
+    id: description
     attributes:
-      label: "Bug Description"
-      description: "Describe the bug in detail."
-      placeholder: "A clear and concise description of what the bug is."
+      label: "Describe the Bug"
+      description: "A clear and concise description of the issue."
+      placeholder: "A bug happened!"
     validations:
       required: true
+
   - type: textarea
-    id: steps_to_reproduce
+    id: steps
     attributes:
       label: "Steps to Reproduce"
-      description: "List the steps to reproduce the bug."
+      description: "List the steps to reproduce the issue."
       placeholder: |
         1. Go to '...'
         2. Click on '...'
-        3. Scroll down to '...'
-        4. See error
+        3. Observe the issue
     validations:
       required: true
+
   - type: textarea
-    id: expected_behavior
+    id: expected-behavior
     attributes:
       label: "Expected Behavior"
-      description: "Describe what you expected to happen."
-      placeholder: "A clear and concise description of what you expected to happen."
-    validations:
-      required: true
+      description: "What should have happened?"
+      placeholder: "Describe the expected outcome."
+
   - type: textarea
-    id: actual_behavior
+    id: actual-behavior
     attributes:
       label: "Actual Behavior"
-      description: "Describe what actually happened."
-      placeholder: "A clear and concise description of what happened."
-    validations:
-      required: true
+      description: "What actually happened?"
+      placeholder: "Describe what actually happens."
+
+  - type: input
+    id: server-version
+    attributes:
+      label: "Rocket.Chat Server Version"
+      placeholder: "Enter the server version"
+
+  - type: input
+    id: app-version
+    attributes:
+      label: "Rocket.Chat App Version"
+      placeholder: "Enter the app version"
+
+  - type: input
+    id: device-name
+    attributes:
+      label: "Device Name"
+      placeholder: "e.g., iPhone 13, Samsung Galaxy S22"
+
+  - type: input
+    id: os-version
+    attributes:
+      label: "OS Version"
+      placeholder: "e.g., iOS 17, Android 14"
+
   - type: textarea
-    id: additional_context
+    id: additional-context
     attributes:
       label: "Additional Context"
-      description: |
-        Add any other context about the problem here. You can attach images or videos by dragging and dropping them into this area or by selecting them from your device.
-      placeholder: "Any additional information that might help in resolving the issue."
-    validations:
-      required: false
+      description: "Provide any other relevant information about the problem."
