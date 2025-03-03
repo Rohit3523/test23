@@ -1,6 +1,5 @@
 name: "Bug Report"
 description: "Report a bug to help us improve."
-title: ""
 body:
   - type: markdown
     attributes:
